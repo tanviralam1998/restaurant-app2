@@ -1,0 +1,24 @@
+.about-area {
+    .about-content p {
+        margin-bottom: 20px;
+    }
+
+    .about-gallary {
+        position: relative;
+
+        img {
+            border: 1px solid $gray;
+
+            &:nth-child(1) {
+                max-width: 450px;
+            }
+
+            &:nth-child(2) {
+                position: absolute;
+                left: 100px;
+                bottom: -100px;
+                max-width: 370px;
+            }
+        }
+    }
+}

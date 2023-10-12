@@ -1,0 +1,40 @@
+.services-area{
+    .single-service{
+        text-align: center;
+        padding: 30px 20px;
+        margin-bottom: 30px;
+        border: 1px solid $gray;
+        position: relative;
+        &:hover {
+            h4{
+                &::before, &::after{
+                    width: 100%;
+                }
+            }
+        }
+        img{
+            max-width: 50px;
+        }
+        h4{
+            margin: 15px 0;
+            &::before{
+                position: absolute;
+                content: '';
+                width: 0%;
+                left: 0%;
+                top: 0%;
+                height: 2px;
+                background-color: $primary-color;transition: .3s;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                width: 0%;
+                right: 0%;
+                bottom: 0%;
+                height: 2px;
+                background-color: $primary-color;transition: .3s;
+            }
+        }
+    }
+}

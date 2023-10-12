@@ -1,0 +1,90 @@
+@import'variable';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: $black;
+}
+// margin & padding
+@for $i from 1 through 12{
+    .pt-#{$i * 10} {
+        padding-top: $i *10px;
+    }
+    .pb-#{$i * 10}{
+        padding-bottom: $i * 10px;
+    }
+    .mt-#{$i * 10}{
+        margin-top: $i * 10px;
+    }
+    .mb-#{$i * 10}{
+        margin-bottom: $i * 10px;
+    }
+}
+// btn css
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: #fff !important;
+    font-size: 18px;
+    background-color: $primary-color;
+    transition: .3s;
+    border-radius: 5px;
+    &:hover{
+        background-color: $black;
+    }
+
+}
+
+// background css
+.bg{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $black;
+        opacity: .85;
+        z-index: -1;
+    }
+
+}
+
+
+// flex css
+$flex: flex, inline-flex;
+@each $var in $flex {
+    .d-#{$var}{
+        display: $var;
+    }
+}
+
+$justify: start, center, end, space-around, space-between space-evenly;
+@each $var in $justify{
+    .justify-#{$var}{
+        justify-content: $var;
+    }
+}
+$align-items: start, center, end, space-around, space-between space-evenly;
+@each $var in $align-items{
+    .align-items-#{$var}{
+        align-items: $var;
+    }
+}
