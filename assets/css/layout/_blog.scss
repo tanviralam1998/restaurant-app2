@@ -1,0 +1,39 @@
+.blog-area {
+    background-color: $gray;
+
+    .single-blog {
+        background-color: $white;
+
+        .blog-meta {
+            margin: 15px 20px;
+            border-bottom: 1px dashed $black;
+            padding: 10px 20px;
+
+            a {
+                margin-right: 23px;
+                transition: .3s;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .blog-content {
+            padding: 20px;
+
+            p {
+                margin: 16px 0;
+            }
+
+            a {
+                text-transform: capitalize;
+                transition: .3s;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

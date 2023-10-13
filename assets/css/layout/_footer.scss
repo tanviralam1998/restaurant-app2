@@ -1,0 +1,35 @@
+.single-footer {
+    color: #fff;
+    img {
+        margin-top: 80px;
+    }
+    h4 {
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+    li {
+        margin-bottom: 15px;
+        font-weight: 700;
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+.footer-social, .footer-copy{
+    border-top: 1px solid $gray;
+    margin-top: 20px;
+    padding-top: 20px;
+    i{
+        font-size: 20px;
+        color: $white;
+        margin-right: 10px;
+        transition: .3s;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+.footer-copy p{
+    color: $white;
+    text-align: end;
+}

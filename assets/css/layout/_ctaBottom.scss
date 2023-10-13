@@ -1,0 +1,17 @@
+.cta-bottom-area {
+    background-color: $primary-color;
+    p {
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: end;
+        color: $white;
+    }
+    a{
+        display: block;
+        color: $white;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 8px 0;
+    }
+}

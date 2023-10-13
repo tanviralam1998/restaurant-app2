@@ -1,0 +1,48 @@
+.social-menu-area {
+    background-color: $gray;
+    .single-social-menu {
+        position: relative;
+        border: 1px solid $gray;
+        background-color: $white;
+        img {
+            width: 100%;
+        }
+
+        p {
+            background-color: $primary-color;
+            padding: 12px 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $white;
+            font-size: 22px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .social-content {
+            padding: 20px;
+
+            ul {
+                li {
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+
+                    &:last-child {
+                        border-top: 1px dashed $black;
+                        padding-top: 15px;
+                        font-weight: 700;
+                    }
+
+                    span {
+                        float: right;
+                        color: $primary-color;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
