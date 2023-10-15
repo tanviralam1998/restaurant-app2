@@ -1,16 +1,40 @@
 .about-area {
-    .about-content p {
-        margin-bottom: 20px;
+    .about-content {
+        @include min-md{
+            margin-bottom: 20px;
+        }
+        @include min-lg{
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
     }
-
+    
     .about-gallary {
         position: relative;
-
+        @include max-xs{
+            margin: 20px 0;
+        }
+        @include min-sm{
+            margin: 20px 0;
+        }
+        @include min-md{
+            margin-left: 25%;
+            margin-bottom: 20px;
+        }
+        @include min-lg{
+            margin-left: 50%;
+            margin-bottom: 30px;
+        }
         img {
             border: 1px solid $gray;
 
             &:nth-child(1) {
                 max-width: 450px;
+                @include max-xs{
+                    width: 100%;
+                }
             }
 
             &:nth-child(2) {
@@ -18,7 +42,24 @@
                 left: 100px;
                 bottom: -100px;
                 max-width: 370px;
+                @include max-xs{
+                    width: 100%;
+                    position: inherit;
+                    left: 0;
+                    bottom: 0;
+                    margin-top: 15px;
+                }
             }
         }
     }
+    .about-page-img {
+        border: 1px solid $gray;
+        img{
+            max-width: 100%;
+        }
+    }
+    .about-page-content p {
+        margin-bottom: 20px;
+    }
+
 }

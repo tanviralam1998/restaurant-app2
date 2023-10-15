@@ -5,7 +5,21 @@ $(document).ready(function () {
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
-        loop: true
+        loop: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 568,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     });
 
     $('.testimonials').slick({
@@ -15,5 +29,17 @@ $(document).ready(function () {
         loop: true,
         slidesToShow: 2,
         dots: true,
+        responsive: [
+            {
+                breakpoint: 568,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
+
+    $('#navMenu').slicknav();
 });

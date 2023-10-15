@@ -36,13 +36,20 @@
 
             p {
                 margin: 20px;
+                @include min-sm{
+                    font-size: 14px;
+                }
             }
 
-            h4 span {
+            h4 {
+                font-size: 14px;
+                span {
                 display: block;
                 font-size: 14px;
                 font-weight: normal;
+                }
             }
+            
         }
     }
 }

@@ -6,6 +6,18 @@
         text-transform: uppercase;
         text-align: end;
         color: $white;
+        @include max-xs{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        @include min-sm{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        @include min-md{
+            font-size: 40px;
+        }
+        
     }
     a{
         display: block;
@@ -13,5 +25,11 @@
         font-size: 18px;
         font-weight: 500;
         margin: 8px 0;
+        @include max-xs{
+            text-align: center;
+        }
+        @include min-sm{
+            text-align: center;
+        }
     }
 }

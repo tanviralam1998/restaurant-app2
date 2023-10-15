@@ -30,6 +30,32 @@ a{
         margin-bottom: $i * 10px;
     }
 }
+.title{
+    h4 {
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        position: relative;
+        padding: 15px 0;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 60px;
+            height: 2px;
+            background-color: $primary-color;
+            bottom: 0;
+            left: 0;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 30px;
+            height: 2px;
+            background-color: $primary-color;
+            bottom: -7px;
+            left: 0;
+        }
+    }
+}
 // btn css
 .btn{
     display: inline-block;

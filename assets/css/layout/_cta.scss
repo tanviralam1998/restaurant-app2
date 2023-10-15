@@ -4,11 +4,29 @@
         h2{
             font-size: 50px;
             margin: 25px 0;
-            
+            @include max-xs{
+                font-size: 18px;
+                margin: 15px 0;
+            }
+            @include min-md{
+                font-size: 36px;
+            }
+            @include min-sm{
+                font-size: 26px;
+            }
             span{
                 font-size: 50px;
                 color: $primary-color;
                 text-transform: uppercase;
+                @include max-xs{
+                    font-size: 18px;
+                }
+                @include min-md{
+                    font-size: 36px;
+                }
+                @include min-sm{
+                    font-size: 26px;
+                }
             }
         }
     } 

@@ -1,35 +1,68 @@
-.single-footer {
-    color: #fff;
-    img {
-        margin-top: 80px;
+.footer-area {
+    @include min-sm{
+        padding: 20px 0;
     }
-    h4 {
-        text-transform: capitalize;
-        margin-bottom: 15px;
+    .single-footer {
+
+        color: #fff;
+
+        img {
+            margin-top: 80px;
+
+            @include max-xs {
+                margin-top: 20px;
+            }
+            @include max-xs {
+                margin-bottom: 20px;
+            }
+            @include min-sm {
+                margin-bottom: 20px;
+            }
+        }
+
+        h4 {
+            text-transform: capitalize;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            font-weight: 700;
+
+            i {
+                margin-right: 10px;
+            }
+        }
     }
-    li {
-        margin-bottom: 15px;
-        font-weight: 700;
+
+    .footer-social,
+    .footer-copy {
+        border-top: 1px solid $gray;
+        margin-top: 20px;
+        padding-top: 20px;
+        @include max-xs{
+            text-align: center;
+        }
         i {
+            font-size: 20px;
+            color: $white;
             margin-right: 10px;
+            transition: .3s;
+
+            &:hover {
+                color: $primary-color;
+            }
         }
     }
-}
-.footer-social, .footer-copy{
-    border-top: 1px solid $gray;
-    margin-top: 20px;
-    padding-top: 20px;
-    i{
-        font-size: 20px;
+
+    .footer-copy p {
         color: $white;
-        margin-right: 10px;
-        transition: .3s;
-        &:hover{
-            color: $primary-color;
+        text-align: end;
+        @include max-xs{
+            text-align: center;
+        }
+        @include min-sm{
+            text-align: start;
         }
     }
-}
-.footer-copy p{
-    color: $white;
-    text-align: end;
 }

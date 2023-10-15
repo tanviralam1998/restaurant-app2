@@ -3,7 +3,12 @@
     .single-team{
         position: relative;
         overflow: hidden;
-        
+        @include max-xs{
+            margin-bottom: 16px;
+        }
+        @include min-sm{
+            margin-bottom: 16px;
+        }
         &:hover .team-content{
             bottom: 0;
         }

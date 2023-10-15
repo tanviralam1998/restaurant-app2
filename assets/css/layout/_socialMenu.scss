@@ -4,6 +4,15 @@
         position: relative;
         border: 1px solid $gray;
         background-color: $white;
+        @include min-sm{
+            margin-bottom: 15px;
+        }
+        @include min-md{
+            margin-bottom: 15px;
+        }
+        @include min-lg{
+            margin-bottom: 20px;
+        }
         img {
             width: 100%;
         }

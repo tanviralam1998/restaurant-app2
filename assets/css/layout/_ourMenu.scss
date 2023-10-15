@@ -7,7 +7,18 @@
         margin-bottom: 30px;
         background-color: $white;
         border: 1px solid $gray;
-        
+        @include max-xs{
+            display: inherit;
+            text-align: center;
+        }
+        @include min-sm{
+            display: inherit;
+            text-align: center;
+        }
+        @include min-lg{
+            display: inherit;
+            text-align: center;
+        }
         img{
             max-width: 110px;
             transition: .3s;
@@ -25,6 +36,10 @@
                 float: right;
                 color: $primary-color;
                 font-style: italic;
+                @include min-sm{
+                    float: none;
+                    margin-left: 46px;
+                }
             }
         }
     }

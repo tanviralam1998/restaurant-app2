@@ -5,7 +5,37 @@ header.header-area {
     left: 0;
     right: 0;
     z-index: 999;
+    @include max-xs{
+        position: inherit;
+        padding: 0;
+    }
+    @include min-sm{
+        position: inherit;
+        padding: 0;
+    }
+    @include min-sm{
+        text-align: center;
+    }
+    .logo{
+        @include max-xs{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+        @include min-sm{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+        
+    }
     .menu{
+        @include max-xs{
+            display: none;margin-top: 10px;
+        }
+        @include min-sm{
+            display: none;
+        }
         ul{
             li{
                 a {
@@ -19,8 +49,26 @@ header.header-area {
                     &:hover{
                         color: $primary-color;
                     }
+                    @include min-md{
+                        font-size: 12px;
+                        margin-left: 10px;
+                    }
+                    @include min-sm{
+                        font-size: 12px;
+                        margin-left: 10px;
+                    }
                 }
             }
         }
     } 
+}
+
+.slicknav_menu {
+    display: none;
+    @include max-xs{
+        display: block;
+    }
+    @include min-sm{
+        display: block;
+    }
 }

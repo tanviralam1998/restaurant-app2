@@ -11,7 +11,67 @@
 
 $grid_coloums: 12;
 $grid_xxl_breackpoint: 1400px;
+$grid_xl_breackpoint: 1200px;
+$grid_lg_breackpoint: 992px;
+$grid_md_breackpoint: 768px;
+$grid_sm_breackpoint: 576px;
 
+@media (max-width: $grid_sm_breackpoint) {
+    .container{
+        width: 100%;
+    }
+    .col{
+        width: 100%;
+    }
+}
+@media (min-width: $grid_sm_breackpoint) {
+    .container{
+        width: 540px;
+    }
+
+    @for $i from 1 through 12 {
+        .col-sm-#{$i}{
+            width: (100 / 12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+}
+@media (min-width: $grid_md_breackpoint) {
+    .container{
+        width: 540px;
+    }
+
+    @for $i from 1 through 12 {
+        .col-md-#{$i}{
+            width: (100 / 12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+}
+@media (min-width: $grid_lg_breackpoint) {
+    .container{
+        width: 960px;
+    }
+
+    @for $i from 1 through 12 {
+        .col-lg-#{$i}{
+            width: (100 / 12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+}
+@media (min-width: $grid_xl_breackpoint) {
+    .container{
+        width: 1140px;
+    }
+
+    @for $i from 1 through 12 {
+        .col-xl-#{$i}{
+            width: (100 / 12) * $i * 1%;
+            padding: 0 15px;
+        }
+    }
+}
 @media (min-width: $grid_xxl_breackpoint) {
     .container{
         width: 1320px;
@@ -22,5 +82,38 @@ $grid_xxl_breackpoint: 1400px;
             width: (100 / 12) * $i * 1%;
             padding: 0 15px;
         }
+    }
+}
+
+// responsive mixin
+
+@mixin min-xxl{
+    @media (min-width: $grid_xxl_breackpoint) {
+        @content;
+    }
+}
+@mixin min-xl{
+    @media (min-width: $grid_xl_breackpoint) and (max-width: $grid_xxl_breackpoint) {
+        @content;
+    }
+}
+@mixin min-lg{
+    @media (min-width: $grid_lg_breackpoint) and (max-width: $grid_xl_breackpoint) {
+        @content;
+    }
+}
+@mixin min-md{
+    @media (min-width: $grid_md_breackpoint) and (max-width: $grid_lg_breackpoint) {
+        @content;
+    }
+}
+@mixin min-sm{
+    @media (min-width: $grid_sm_breackpoint) and (max-width: $grid_md_breackpoint) {
+        @content;
+    }
+}
+@mixin max-xs{
+    @media (max-width: $grid_sm_breackpoint) {
+        @content;
     }
 }

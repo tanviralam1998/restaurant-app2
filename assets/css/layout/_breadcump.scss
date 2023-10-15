@@ -1,0 +1,20 @@
+.breadcump-area {
+    padding: 150px 0 50px;
+    h4 {
+        text-transform: capitalize;
+        font-size: 36px;
+        color: $white;
+        margin-bottom: 20px;
+    }
+    ul {
+        display: flex;
+        li {
+            margin-right: 10px;
+            font-size: 18px;
+            color: $white;
+            &.active{
+                color: $primary-color;
+            }
+        }
+    }
+}
