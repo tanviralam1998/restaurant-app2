@@ -4,6 +4,9 @@
         position: relative;
         border: 1px solid $gray;
         background-color: $white;
+        @include max-xs{
+            margin-bottom: 15px;
+        }
         @include min-sm{
             margin-bottom: 15px;
         }

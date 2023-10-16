@@ -1,11 +1,17 @@
 .testimonial-area {
     color: $white;
+    @include max-xs{
+        padding: 40px 0;
+    }
     .testimonials {
         .slick-dots {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
             margin-top: 50px;
+            @include max-xs{
+                display: none !important;
+            }
             li {
                 display: inline-block;
                 margin: 0 5px;

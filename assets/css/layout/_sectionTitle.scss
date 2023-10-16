@@ -9,6 +9,9 @@
     h2 {
         text-transform: capitalize;
         position: relative;
+        @include max-xs{
+            font-size: 30px;
+        }
         &::before {
             content: "";
             position: absolute;

@@ -8,7 +8,8 @@
         color: $white;
         @include max-xs{
             margin-bottom: 10px;
-            text-align: center;
+            margin-left: 40px;
+            font-size: 30px;
         }
         @include min-sm{
             margin-bottom: 20px;
@@ -26,7 +27,7 @@
         font-weight: 500;
         margin: 8px 0;
         @include max-xs{
-            text-align: center;
+            margin-left: 40px;
         }
         @include min-sm{
             text-align: center;

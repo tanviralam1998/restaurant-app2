@@ -15,6 +15,7 @@ a{
     text-decoration: none;
     color: $black;
 }
+
 // margin & padding
 @for $i from 1 through 12{
     .pt-#{$i * 10} {

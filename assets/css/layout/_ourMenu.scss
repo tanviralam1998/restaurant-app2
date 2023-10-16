@@ -31,7 +31,9 @@
             text-transform: capitalize;
             border-bottom: 1px solid $gray;
             padding: 8px 0;
-
+            @include max-xs{
+                font-size: 18px;
+            }
             & span {
                 float: right;
                 color: $primary-color;

@@ -4,9 +4,9 @@
         h2{
             font-size: 50px;
             margin: 25px 0;
+            
             @include max-xs{
-                font-size: 18px;
-                margin: 15px 0;
+                font-size: 14px;
             }
             @include min-md{
                 font-size: 36px;
@@ -19,7 +19,7 @@
                 color: $primary-color;
                 text-transform: uppercase;
                 @include max-xs{
-                    font-size: 18px;
+                    font-size: 14px;
                 }
                 @include min-md{
                     font-size: 36px;
